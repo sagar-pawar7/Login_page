@@ -3,7 +3,7 @@
     padding: 0px;
 }
 body {
-    font-family: ;
+    background: linear-gradient( 100deg, #e66465, #9198e5);
 }
 #login {
     display: flex;
@@ -15,45 +15,46 @@ body {
     width: 400px;
 }
 #login form {
-    width: 400px;
+    width: 350px;
     border-radius: 20px;
-    background-image: linear-gradient(to right, rgb(193, 24, 24), rgb(17, 93, 169));
+    background-image: linear-gradient(to right, rgb(194, 63, 63), rgb(57, 106, 155));
     position: relative;
 }
 form p {
     font-size: 30px;
     text-align: center;
     margin-top: 35px;
-    background: linear-gradient(90deg,#00dbde,#fc00ff);
-    font-family: monospace sans-serif;
+    background: linear-gradient(to right, #f32170, orange, #cf23cf, #eedd44);
+    -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
-    -webkit-text-size-adjust: transparent;
+    font-family: Comic Sans MS;
+    font-weight: bolder;
 
 }
 form img:nth-of-type(1) {
     height: 30px;
     width: 30px;
     position: absolute;
-    top: 113px;
+    top: 121px;
     margin-left: 38px
 }
 form img:nth-of-type(2) {
     height: 30px;
     width: 30px;
     position: absolute;
-    top: 184px;
-    right: 83%;
+    top: 192px;
+    right: 81%;
 }
 form img:nth-of-type(3) {
     height: 25px;
     width: 26px;
     position: absolute;
-    top: 191px;
+    top: 198px;
     right: 33px;
 }
 form .pswd .arrow {
     margin-left: 4px;
-    margin-top: 111px;
+    margin-top: 113.5px;
     height: 16px;
     width: 16px;
 }
@@ -65,7 +66,7 @@ input[type="text"] {
     outline: none;
     background: none;
     border-bottom: 1px solid #222;
-    width: 300px;
+    width: 247px;
     font-size: 20px;
 }
 ::placeholder {
@@ -80,7 +81,7 @@ input[type="password"] {
     font-size: 20px;
     outline: none;
     border-bottom: 1px solid #222;
-    width: 300px;
+    width: 250px;
 }
 input[type="password"]:hover {
     border-bottom: 1px solid #222;
@@ -92,16 +93,17 @@ input[type="text"]:hover {
 }
 form .pswd {
     display: inline-block;
-    margin-left: 198px;
+    margin-left: 142px;
     margin-top: 9px;
     text-decoration: none;
     color: initial;
+    font-family: Comic Sans MS;
 }
 form .log {
     display: inline-block;
     height: 40px;
     width: 130px;
-    background-color: yellow;
+    background-image: linear-gradient(to left, yellow,orange 70%);
     border-radius: 60px;
     padding-top: 14px;
     text-decoration: none;
@@ -112,9 +114,16 @@ form .log {
     font-family:Georgia, 'Times New Roman', Times, serif;
     margin-bottom: 100px;
     text-align: center;
-    margin-left: 141px;
+    margin-left: 110px;
     color: initial;
 }
-input[type="text"]:hover form img:nth-of-type(1) {
-    display: none;
+input[type="checkbox"] {
+    width: 35px;
+    height: 22px;
+    position: absolute;
+    top: 200px;
+    cursor: pointer;
+    right: 28px;
+    opacity: 0;
+    z-index: 2;
 }

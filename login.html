@@ -10,18 +10,29 @@
 <body>
     <div id="login">
         <div class="img">
-            <img src="./Images/boy with guitar.jpg" alt="boy">
+            <img src="./Images/guitarist.svg" alt="boy">
         </div>
         <form>
             <p>HELLO</p>
             <img src="./Images/person-fill.svg" alt="person">
             <input type="text" placeholder="user id">
             <img src="./Images/lock.png" alt="lock">
-            <input type="password" placeholder="Password">
+            <input type="password" id="myInput" placeholder="Password">
+            <input type="checkbox" onclick="myFunction()">
             <img src="./Images/notvisible.webp" alt="eye">
-            <a class="pswd" href="#">FORGET PASSWORD <img class="arrow" src="./Images/arrow-up-right-square.svg" alt="arrow"></a>
+            <a class="pswd" href="#">FORGET PASSWORD <img class="arrow" onclick="toggle()" src="./Images/arrow-up-right-square.svg" alt="arrow"></a>
             <a class="log" href="#">Log in</a>
         </form>
     </div>
+    <script>
+            function myFunction() {
+      var x = document.getElementById("myInput");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+    </script>
 </body>
 </html>
